@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suit1]">
+  <test name="Registration(failed)">
+    <classes>
+      <class name="candidateSideAutomation.linkTraversal">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.linkTraversal -->
+      <class name="candidateSideAutomation.candidateRegistration">
+        <methods>
+          <include name="linkedinRegistration"/>
+          <include name="registraionFirstStage"/>
+          <include name="teardon"/>
+          <include name="registraionCompleteStage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.candidateRegistration -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+  <test name="linktest(failed)">
+    <classes>
+      <class name="candidateSideAutomation.candidateRegistration">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.candidateRegistration -->
+      <class name="candidateSideAutomation.linkTraversal">
+        <methods>
+          <include name="setup"/>
+          <include name="privateSettings"/>
+          <include name="teardon"/>
+          <include name="login"/>
+          <include name="ediKeySkills"/>
+          <include name="editProfile"/>
+          <include name="signOut"/>
+          <include name="editDetails"/>
+          <include name="pageVal"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.linkTraversal -->
+    </classes>
+  </test> <!-- linktest(failed) -->
+</suite> <!-- Failed suite [Suit1] -->
