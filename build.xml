@@ -50,7 +50,7 @@
 <target name="xslt" depends="Run">
                  
    <xslt in="${basedir}/testng_output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html">
-                        
+                       
             <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
 
             <param expression="true" name="testNgXslt.sortTestCaseLinks" />

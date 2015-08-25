@@ -1,16 +1,24 @@
 
 package utilitypackage;
-import org.apache.poi.hssf.usermodel.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Calendar;
+
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.hssf.usermodel.HSSFCreationHelper;
+import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.hssf.usermodel.HSSFFont;
+import org.apache.poi.hssf.usermodel.HSSFHyperlink;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
-
 import org.apache.poi.ss.usermodel.IndexedColors;
-import org.apache.poi.xssf.usermodel.*;
-
-
-import java.io.*;
-import java.util.Calendar;
+import org.apache.poi.xssf.usermodel.XSSFFont;
 
 
 public class Xls_Reader 
@@ -85,7 +93,7 @@ if(cell.getCellType()==Cell.CELL_TYPE_STRING)
 return cell.getStringCellValue();
 else if(cell.getCellType()==Cell.CELL_TYPE_NUMERIC || cell.getCellType()==Cell.CELL_TYPE_FORMULA ){
 
-String cellText = String.valueOf(cell.getNumericCellValue());
+	String cellText ="";
 if (HSSFDateUtil.isCellDateFormatted(cell)) {
 // format in form of M/D/YY
 double d = cell.getNumericCellValue();
@@ -100,6 +108,10 @@ cellText;
 
 //System.out.println(cellText);
 
+}else
+{
+ cell.setCellType(Cell.CELL_TYPE_STRING);
+ cellText =cell.getStringCellValue();
 }
 
 

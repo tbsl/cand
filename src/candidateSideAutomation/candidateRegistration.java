@@ -1,11 +1,17 @@
 package candidateSideAutomation;
 
+import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,34 +21,32 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class candidateRegistration {
+public class candidateRegistration extends candidateBaseFunctions {
 	
-
-	
-public static WebDriver  driver;
 	
 	@BeforeMethod
-	public void setup()
+	public void setup() throws IOException
 	{
-		driver=new FirefoxDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		startup();
 		
 	}
 	
-	//Author name :Bidyut Hazarika
+	// Author name :Bidyut Hazarika
 	// Product name:  "timesjobs-candidate"
 	// Creation date: 3-5-2014
 	// Below script checks successful tj registration using LinkedIn profile
 	
 	
 	
-	@Test 
+	@Test (enabled=false)
 	public void linkedinRegistration() throws IOException, InterruptedException
 	{
-		driver.get("http://candstaging.timesjobs.com");
-        driver.findElement(By.xpath("html/body/div[1]/header/nav[2]/ul[3]/li[2]/a")).click();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(c.getProperty("url"));
+		
+		
+		
+        driver.findElement(By.xpath("//*[@class='universal-header']/header/nav[2]/ul[3]/li[2]/a")).click();
+        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='registrationStep2Bean']/div[1]/img")).click();
         
         
@@ -69,8 +73,11 @@ public static WebDriver  driver;
         System.out.println(emailAdd);
            
           
-          
-        driver.findElement(By.id("emailAdd")).sendKeys(emailAdd);
+        Thread.sleep(5000);  
+        
+        //not working
+        
+        driver.findElement(By.id("emailAdd")).sendKeys(emailAdd);   //emailAdd
         driver.findElement(By.id("passwordField")).sendKeys("password");
         driver.findElement(By.id("retypePassword")).sendKeys("password");
         driver.findElement(By.xpath("//*[@id='basicSubmit']")).click();
@@ -104,7 +111,7 @@ public static WebDriver  driver;
         Thread.sleep(2000);
       
         
-        String actual2= driver.findElement(By.xpath("html/body/div[4]/div[1]/div/div/div[2]/div/div[1]/div/p")).getText();
+        String actual2= driver.findElement(By.xpath("//*[@id='site']/div[6]/div[1]/div/div/div[2]/div/div[1]/div/p")).getText();
         String expected2="Verify your email address!";
         
         Assert.assertEquals(actual2, expected2);
@@ -112,12 +119,23 @@ public static WebDriver  driver;
 		
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void registraionCompleteStage() throws IOException, InterruptedException
 	{
-		driver.get("http://candstaging.timesjobs.com");
+		driver.get(c.getProperty("url"));
+		
+		String currentURL  = driver.getCurrentUrl();
+		System.out.println(currentURL);
 
-		driver.findElement(By.xpath("html/body/div[1]/header/nav[2]/ul[3]/li[2]/a")).click();
+		//****************************screen shot**************
+		
+		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(file, new File("C:\\Users\\Bidyut.Hazarika\\Desktop\\guesthome.jpeg"));
+		
+
+		//****************************screen shot**************
+		
+		driver.findElement(By.xpath("//*[@class='universal-header']/header/nav[2]/ul[3]/li[2]/a")).click();
 
 		// Generating email id
 		//------------------------------------
@@ -133,6 +151,9 @@ public static WebDriver  driver;
 		// Generating email id
 		
 		driver.findElement(By.id("emailAdd")).sendKeys(emailAdd);
+		
+		String Result=driver.findElement(By.id("emailAdd")).getAttribute("value");
+		System.out.println("email id is: "+ Result);
 
 		driver.findElement(By.xpath("//*[@id='passwordField']")).sendKeys("password");
 		driver.findElement(By.xpath("//*[@id='retypePassword']")).sendKeys("password");
@@ -145,7 +166,8 @@ public static WebDriver  driver;
 		driver.findElement(By.xpath("//*[@id='cboWorkExpYear']")).sendKeys("3");
 		driver.findElement(By.xpath("//*[@id='cboWorkExpMonth']")).sendKeys("3");
 
-		driver.findElement(By.xpath("//*[@id='curLocation']")).sendKeys("Delhi");
+		Select selectReport   = new Select(driver.findElement(By.id("curLocation"))); 
+        selectReport.selectByIndex(6);
 
 		Thread.sleep(1000);
 		driver.findElement(By.id("basicSubmit")).click();
@@ -162,31 +184,37 @@ public static WebDriver  driver;
 		driver.findElement(By.xpath("//*[@id='token-input-keySkills']")).sendKeys("Java");
 		Thread.sleep(2000);
 
-		driver.findElement(By.xpath("html/body/div[4]/ul/li[1]")).click();
+		driver.findElement(By.xpath("//*[@class='token-input-dropdown-facebook']/ul/li[1]")).click();    //html/body/div[4]/ul/li[1]
 
 		driver.findElement(By.xpath("//*[@id='categorisedDegree']")).sendKeys("BE/B.Tech(Engineering)");
 		driver.findElement(By.xpath("//*[@id='detailResume']/figure/a")).click();
 		driver.findElement(By.xpath("//*[@id='description']")).sendKeys("To play a key information systems, QA Engineer or Quality Assurance role and ensuring Quality Products are delivered, using new technology, new innovative testing ideas, working on tight scheduled projects saving time and money and being productive, 2 years of experience in Manual Testing, UI Testing, EDI testing in ecommerce application of shipping logistics. 7 months of experience of automation testing using selenium. Experienced in manual testing with the focus on Functional Testing, Stress Testing, and Regression Testing. Experienced in Production and CVT acceptance testing. Experience in working with analysts, developers, and testers for complex projects during the full Software Development Life Cycle (SDLC).");
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//*[@id='submit_button']")).click();
-
 		
 
-		String actual1 = driver.findElement(By.xpath("html/body/div[4]/div[1]/div/div/div[2]/div/div[1]/div/p")).getText();
+
+		String actual1 = driver.findElement(By.xpath("//*[@id='site']/div[6]/div[1]/div/div/div[2]/div/div[1]/div/p")).getText();
 		String expected1 = "Verify your email address!";
 		Assert.assertEquals(actual1, expected1);
+		
+	/*	
+		driver.findElement(By.xpath("//*[@id='noedit']/a")).click();
+		String usermailId=driver.findElement(By.xpath("//*[@id='newemail']")).getAttribute("value");
+		System.out.println("verify email user id"+usermailId);
+*/
      
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void registraionFirstStage() throws IOException,	InterruptedException 
 	
 	{
 
-		driver.get("http://candstaging.timesjobs.com");
+		driver.get(c.getProperty("url"));
 		
-		driver.findElement(By.xpath("html/body/div[1]/header/nav[2]/ul[3]/li[2]/a")).click();
-
+		driver.findElement(By.xpath("//*[@class='universal-header']/header/nav[2]/ul[3]/li[2]/a")).click();
+		
 		// Generating email id
 		driver.findElement(By.id("emailAdd")).clear();
 		Thread.sleep(1000);
@@ -210,8 +238,11 @@ public static WebDriver  driver;
 
 		driver.findElement(By.xpath("//*[@id='cboWorkExpYear']")).sendKeys("3");
 		driver.findElement(By.xpath("//*[@id='cboWorkExpMonth']")).sendKeys("3");
+		
+		Select selectReport   = new Select(driver.findElement(By.id("curLocation"))); 
+        selectReport.selectByIndex(6);
 
-		driver.findElement(By.xpath("//*[@id='curLocation']")).sendKeys("Delhi");
+		
 
 		Thread.sleep(1000);
 		driver.findElement(By.id("basicSubmit")).click();
@@ -221,8 +252,70 @@ public static WebDriver  driver;
 		String actual = driver.findElement(By.xpath("//*[@id='registrationStep2Bean']/div[1]/h4")).getText();
 		String expected = "Congratulations! Your registration is successful. Now please complete your profile to become visible to the Recruiters!";
 		Assert.assertEquals(actual, expected);
-
 	
+	
+	}
+	
+	
+	@Test(priority=4)
+	public void recommendedJobsVerification() throws IOException, InterruptedException 
+	
+	{
+	
+		String  runUrl=c.getProperty("url")+"candidate/login.html";
+		driver.get(runUrl);
+	String name = new Object(){}.getClass().getEnclosingMethod().getName();	
+	
+	//Login into the application
+	driver.findElement(By.id("txtUseName")).sendKeys("sauravghosh@live.com");
+	driver.findElement(By.id("j_password")).sendKeys("password");
+	driver.findElement(By.id("submitbutton")).click();
+	//Login into the application
+	
+	WebElement ele = driver.findElement(By.className("accordion-bx"));
+	List<WebElement> joblist=ele.findElements(By.xpath("//*[@id='recoJobsContentDetails']/div/ul/li"));
+	int s=joblist.size();
+	
+	
+	int s1=Integer.parseInt(driver.findElement(By.xpath("//*[@id='suggestedJobsByOtherUser']")).getText());
+	
+	int p=s+s1;
+	System.out.println(p);
+	
+	String ss=Integer.toString(p);
+	
+	String actual= "Recommended Jobs ("+ss+")";
+	String expected=driver.findElement(By.xpath("//*[@id='personlise_RJ']")).getText();
+	System.out.println(expected);
+	System.out.println(actual);
+	
+	File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	FileUtils.copyFile(scrFile, new File(System.getProperty("user.dir")+"\\Screenshotfolder" + "//" +name+".jpg"));
+	
+	Assert.assertEquals(expected, actual);
+	
+	}
+	
+	@Test(priority=2)
+	public  void verifyEmail(){
+		  
+		    
+	        driver.get("http://mailinator.com");
+	      //  System.out.println(usermailId);
+	       // driver.findElement(By.id("inboxfield")).sendKeys(usermailId);
+	        driver.findElement(By.id("inboxfield")).sendKeys(Keys.ENTER);
+	       // driver.findElement(By.xpath("html/body/div[2]/div/div[1]/div[2]/div/div[2]/div/div/btn")).click();
+	        
+	        driver.findElement(By.xpath("//*[@id='mailcontainer']/li[1]/a/div[1]")).click();
+	        
+	        
+
+	        WebElement wb = driver.findElement(By.xpath("//div[@class='inbox-content']/div[3]/iframe"));
+	       
+	        
+	        driver.switchTo().frame(wb);
+	        
+	        driver.findElement(By.xpath("//div[@class='mailview']/table/tbody/tr/td/table[1]/tbody/tr[3]/td/div/font/div[2]/table[1]/tbody/tr/td/table/tbody/tr/td/div/span/font/a")).click();
 	}
 	
 	
@@ -230,7 +323,7 @@ public static WebDriver  driver;
 	@AfterMethod
 	public void teardon()
 	{
-		driver.quit();
+		//driver.close();
 	}
 
 

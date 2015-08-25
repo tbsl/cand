@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HIRE SIDE TEST CASES]">
+  <test name="Collaborate testing(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="shareinbox"/>
+          <include name="unshareFolder"/>
+          <include name="teardon"/>
+          <include name="setup"/>
+          <include name="unshareinbox"/>
+          <include name="shareFolder"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- Collaborate testing(failed) -->
+  <test name="Registration(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="Registration"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+  <test name="Search(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="advanceSearchSallary"/>
+          <include name="bpoSearch"/>
+          <include name="quickSearchExperience"/>
+          <include name="quickSearchlocations"/>
+          <include name="quickSearchkeywords"/>
+          <include name="setup"/>
+          <include name="advanceSearchFunctionalArea"/>
+          <include name="advanceSearchExperience"/>
+          <include name="quickSearch"/>
+          <include name="advanceSearchLocation"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- Search(failed) -->
+  <test name="UsageReport(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="DivineIPUsageReport"/>
+          <include name="DialBPOJobPostingUsageReport"/>
+          <include name="JobListingUsagesReport"/>
+          <include name="XpressHireSMSUsageReport"/>
+          <include name="XpressHirewithSMSContact"/>
+          <include name="MassMailingUsageReport"/>
+          <include name="logout"/>
+          <include name="DatabaseUsageReport"/>
+          <include name="XpressHirewithSMSInbox"/>
+          <include name="LoginReport"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- UsageReport(failed) -->
+  <test name="ManageAccount(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="EditProfile"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- ManageAccount(failed) -->
+  <test name="JobPosting(failed)">
+    <classes>
+      <class name="hireSideAutomation.searchApplication">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.searchApplication -->
+      <class name="hireSideAutomation.hireRegistration">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireRegistration -->
+      <class name="hireSideAutomation.ManageAccountUser">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- hireSideAutomation.ManageAccountUser -->
+      <class name="hireSideAutomation.HireUsageReport">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- hireSideAutomation.HireUsageReport -->
+      <class name="hireSideAutomation.collaborate">
+        <methods>
+          <include name="teardon"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.collaborate -->
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit">
+        <methods>
+          <include name="previewJob"/>
+          <include name="postJob"/>
+          <include name="EditJob"/>
+          <include name="SaveDraftJob"/>
+          <include name="JobPostingFormFill"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- hireSideAutomation.EmployerPostingPreviewDraftEdit -->
+      <class name="hireSideAutomation.hireSearchAutomation">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- hireSideAutomation.hireSearchAutomation -->
+    </classes>
+  </test> <!-- JobPosting(failed) -->
+</suite> <!-- Failed suite [HIRE SIDE TEST CASES] -->

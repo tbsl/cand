@@ -1,40 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [CANDIDATE SIDE TEST CASES]">
-  <test name="Registration(failed)">
+  <test name="LoginFlow(failed)">
     <classes>
+      <class name="candidateSideAutomation.jobalert">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.jobalert -->
+      <class name="candidateSideAutomation.Login">
+        <methods>
+          <include name="signInlayer"/>
+          <include name="loginStepOneUser"/>
+          <include name="setup"/>
+          <include name="teardon"/>
+          <include name="loginPage"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.Login -->
+      <class name="candidateSideAutomation.NewResume">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.NewResume -->
       <class name="candidateSideAutomation.candidateRegistration">
         <methods>
-          <include name="linkedinRegistration"/>
           <include name="teardon"/>
           <include name="setup"/>
         </methods>
       </class> <!-- candidateSideAutomation.candidateRegistration -->
-      <class name="candidateSideAutomation.linkTraversal">
+      <class name="candidateSideAutomation.Endorsement">
         <methods>
           <include name="setup"/>
           <include name="teardon"/>
         </methods>
-      </class> <!-- candidateSideAutomation.linkTraversal -->
+      </class> <!-- candidateSideAutomation.Endorsement -->
     </classes>
-  </test> <!-- Registration(failed) -->
-  <test name="linktest(failed)">
+  </test> <!-- LoginFlow(failed) -->
+  <test name="EndorsementFlow(failed)">
     <classes>
+      <class name="candidateSideAutomation.jobalert">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.jobalert -->
+      <class name="candidateSideAutomation.Login">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.Login -->
+      <class name="candidateSideAutomation.NewResume">
+        <methods>
+          <include name="setup"/>
+          <include name="teardon"/>
+        </methods>
+      </class> <!-- candidateSideAutomation.NewResume -->
       <class name="candidateSideAutomation.candidateRegistration">
         <methods>
           <include name="teardon"/>
           <include name="setup"/>
         </methods>
       </class> <!-- candidateSideAutomation.candidateRegistration -->
-      <class name="candidateSideAutomation.linkTraversal">
+      <class name="candidateSideAutomation.Endorsement">
         <methods>
           <include name="setup"/>
           <include name="teardon"/>
-          <include name="ediKeySkills"/>
-          <include name="editDetails"/>
-          <include name="pageVal"/>
+          <include name="endoresement"/>
         </methods>
-      </class> <!-- candidateSideAutomation.linkTraversal -->
+      </class> <!-- candidateSideAutomation.Endorsement -->
     </classes>
-  </test> <!-- linktest(failed) -->
+  </test> <!-- EndorsementFlow(failed) -->
 </suite> <!-- Failed suite [CANDIDATE SIDE TEST CASES] -->

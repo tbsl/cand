@@ -4,9 +4,9 @@
 <suite name="TimesJobs Suite">
 
 <suite-files>
-<suite-file path="./suiteFolder/candidateSideAutomation.xml"/>
-<!-- <suite-file path="./suiteFolder/hireSideAutomation.xml"/> -->
-<suite-file path="./suiteFolder/jobbuzzSideAutomation.xml"/>
-<suite-file path="./suiteFolder/stepAheadSideAutomation.xml"/>
+ <suite-file path="./suiteFolder/candidateSideAutomation.xml"/> 
+<!--<suite-file path="./suiteFolder/hireSideAutomation.xml"/>-->
+<!--<suite-file path="./suiteFolder/jobbuzzSideAutomation.xml"/>-->
+<!--<suite-file path="./suiteFolder/stepAheadSideAutomation.xml"/>-->
 </suite-files>
 </suite>

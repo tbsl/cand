@@ -23,6 +23,7 @@ import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
+
 public class attachmentEmail {
     public static void main(String[] args) {
     	
@@ -31,7 +32,7 @@ public class attachmentEmail {
     	/////Zipping the file
     	
     	String zipFile = "D:\\zip folder\\testng-xslt.zip";
-		String srcDir = "D:\\ReportGeneration\\testng-xslt";
+		String srcDir = "D:\\Work_Space\\TimesAutomationProject_bidyut_new\\testng-xslt";
 		
 		try {
 			
@@ -83,17 +84,17 @@ public class attachmentEmail {
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("sauravtbsl@gmail.com","jiajuri@123");
+                return new PasswordAuthentication("bidyut.tbsl@gmail.com","physics123@");
             }
         });
 
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("sauravtbsl@gmail.com"));
+            message.setFrom(new InternetAddress("bidyut.tbsl@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("saurav.ghosh@timesgroup.com"));
-            message.setSubject("Sample Mail with Attachment");
+            message.setSubject("Automation Result Set");
             BodyPart messageBodyPart = new MimeBodyPart();
             Multipart multipart = new MimeMultipart();
             File file = new File("D:\\zip folder\\testng-xslt.zip");

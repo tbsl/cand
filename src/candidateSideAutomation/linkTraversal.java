@@ -29,7 +29,7 @@ public static WebDriver  driver;
 	@Test(priority=0)
 	public void login(){
 		  
-	  driver.get("http://candstaging.timesjobs.com");
+	  driver.get("http://candstaging.timesjobs.com/");
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  driver.findElement(By.linkText("Sign In")).click();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -37,7 +37,7 @@ public static WebDriver  driver;
 	  driver.switchTo().frame(iframe1);
 	  WebElement iframe2 = driver.findElement(By.id("GB_frame"));
 	  driver.switchTo().frame(iframe2);
-      driver.findElement(By.xpath("//input[@id='j_username']")).sendKeys("nehaqc@mail.com");
+      driver.findElement(By.xpath("//input[@id='j_username']")).sendKeys("sauravghosh@live.com");
 	  driver.findElement(By.xpath("//input[@id='j_password']")).sendKeys("password");
 	  driver.findElement(By.xpath("//input[@type='button']")).click();
 	  driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
@@ -45,7 +45,7 @@ public static WebDriver  driver;
 
 	@Test(priority=1)
 	  public void pageVal(){
-	  String page = driver.findElement(By.xpath("//div[@class='rec-jobs']/header/div/h1")).getText();
+	  String page = driver.findElement(By.xpath("//*[@id='recoJobsSection']/div/header/div/h1")).getText();
 	  String exp = "Jobs Recommended Based on Your Profile";
 	  Assert.assertEquals(page, exp);
 	  System.out.println("times job page passed");
@@ -73,7 +73,6 @@ public static WebDriver  driver;
 	  System.out.println("private settings passed");
 	  
 	  act.moveToElement(driver.findElement(By.xpath("//div[@id='userProfilPicsId']/a"))).perform();
-	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//div[@class='nav-drop']/ul/li[3]/a")).click();
 	  String expPage2 = "Connect Via Social Profiles";
 	  String actPage2 = driver.findElement(By.xpath("//div[@class='rounded_msg']/div//div[2]/h3")).getText();
@@ -97,31 +96,24 @@ public static WebDriver  driver;
 	  @Test(priority=4)
 	  public void signOut(){
   	  //Sign Out
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 	  Actions act = new Actions(driver);
 	  act.moveToElement(driver.findElement(By.xpath("//div[@id='userProfilPicsId']"))).perform();
-	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	  driver.findElement(By.xpath("//div[@class='nav-drop']/ul/li[4]/a")).click();
-	  String expPage4 ="Sign Out Completely";
-	  String actPage4 = driver.findElement(By.xpath("//p[@class='mrgn_t5']/a/b/u")).getText();
+	  driver.findElement(By.linkText("Sign Out")).click();
+	  String expPage4 ="You have successfully logged out of TimesJobs.com";
+	  String actPage4 = driver.findElement(By.xpath("html/body/div[5]/div[1]/div[1]/div/div[2]/h2")).getText();
 	  Assert.assertEquals(actPage4, expPage4);
-	  System.out.println("Partial Sign out passed");
+	  System.out.println("Sign out passed");
 	  
 	  //Sign out completely
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  driver.findElement(By.xpath("//p[@class='mrgn_t5']/a/b/u")).click();
-	  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-	  String actPage5 = driver.findElement(By.xpath("//div[@class='mid']/h2")).getText();
-	  String expPage5 = "You have successfully logged out of TimesJobs.com";
-	  Assert.assertEquals(actPage5, expPage5);
-	  System.out.println("Complete Sign out passed");
+
 	  }
 	  
-	  @Test(priority=5) 
+	/*  @Test(priority=5) 
       public void editDetails() throws InterruptedException{
              
      //click on profile -Edit Profile
-     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       Actions act = new Actions(driver);
       act.moveToElement(driver.findElement(By.xpath("//div[@id='userProfilPicsId']/a"))).perform();
       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -171,7 +163,7 @@ public static WebDriver  driver;
       driver.findElement(By.xpath("//form[@id='regForm']/div[2]/div/div[10]/div[1]/input[2]")).click();
       System.out.println("Edit Key Skills passed");
       driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-     }
+     }*/
 
 	
 		

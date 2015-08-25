@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="candidateSideAutomation.Endorsement">
+      <class name="candidateSideAutomation.CompleteRegistration">
         <methods>
+          <include name="editSummary"/>
           <include name="setup"/>
           <include name="teardon"/>
-          <include name="endoresement"/>
         </methods>
-      </class> <!-- candidateSideAutomation.Endorsement -->
+      </class> <!-- candidateSideAutomation.CompleteRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

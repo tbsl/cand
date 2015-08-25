@@ -1,389 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" total="12" passed="8">
+<testng-results skipped="0" failed="4" total="20" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="JOB BUZZ TEST CASES" duration-ms="173156" started-at="2014-05-26T06:37:04Z" finished-at="2014-05-26T06:39:57Z">
-    <groups>
-    </groups>
-    <test name="JOBBUZZ" duration-ms="173156" started-at="2014-05-26T06:37:04Z" finished-at="2014-05-26T06:39:57Z">
-      <class name="jobbuzzSideAutomation.jobuzzside">
-        <test-method status="PASS" signature="setup()[pri:0, instance:jobbuzzSideAutomation.jobuzzside@1ac2f9c]" name="setup" is-config="true" duration-ms="5453" started-at="2014-05-26T12:07:04Z" finished-at="2014-05-26T12:07:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="postInterview()[pri:0, instance:jobbuzzSideAutomation.jobuzzside@1ac2f9c]" name="postInterview" duration-ms="167438" started-at="2014-05-26T12:07:09Z" finished-at="2014-05-26T12:09:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postInterview -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:jobbuzzSideAutomation.jobuzzside@1ac2f9c]" name="teardon" is-config="true" duration-ms="265" started-at="2014-05-26T12:09:57Z" finished-at="2014-05-26T12:09:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardon -->
-      </class> <!-- jobbuzzSideAutomation.jobuzzside -->
-    </test> <!-- JOBBUZZ -->
-  </suite> <!-- JOB BUZZ TEST CASES -->
-  <suite name="TimesJobs Suite" duration-ms="0" started-at="2014-05-26T06:40:31Z" finished-at="2014-05-26T06:40:31Z">
+  <suite name="TimesJobs Suite" duration-ms="0" started-at="2015-08-07T05:12:01Z" finished-at="2015-08-07T05:12:01Z">
     <groups>
     </groups>
   </suite> <!-- TimesJobs Suite -->
-  <suite name="STEP AHEAD TEST CASES" duration-ms="33375" started-at="2014-05-26T06:39:57Z" finished-at="2014-05-26T06:40:31Z">
+  <suite name="CANDIDATE SIDE TEST CASES" duration-ms="810539" started-at="2015-08-07T04:58:30Z" finished-at="2015-08-07T05:12:00Z">
     <groups>
     </groups>
-    <test name="StepAhead" duration-ms="33375" started-at="2014-05-26T06:39:57Z" finished-at="2014-05-26T06:40:31Z">
-      <class name="stepAheadSideAutomation.stepAheadside">
-        <test-method status="PASS" signature="setup()[pri:0, instance:stepAheadSideAutomation.stepAheadside@edc3a2]" name="setup" is-config="true" duration-ms="5875" started-at="2014-05-26T12:09:57Z" finished-at="2014-05-26T12:10:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="stepAhead()[pri:0, instance:stepAheadSideAutomation.stepAheadside@edc3a2]" name="stepAhead" duration-ms="27235" started-at="2014-05-26T12:10:03Z" finished-at="2014-05-26T12:10:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stepAhead -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:stepAheadSideAutomation.stepAheadside@edc3a2]" name="teardon" is-config="true" duration-ms="265" started-at="2014-05-26T12:10:30Z" finished-at="2014-05-26T12:10:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardon -->
-      </class> <!-- stepAheadSideAutomation.stepAheadside -->
-    </test> <!-- StepAhead -->
-  </suite> <!-- STEP AHEAD TEST CASES -->
-  <suite name="CANDIDATE SIDE TEST CASES" duration-ms="196782" started-at="2014-05-26T06:33:47Z" finished-at="2014-05-26T06:37:04Z">
-    <groups>
-    </groups>
-    <test name="Registration" duration-ms="123313" started-at="2014-05-26T06:33:47Z" finished-at="2014-05-26T06:35:50Z">
+    <test name="Registration" duration-ms="116674" started-at="2015-08-07T04:58:30Z" finished-at="2015-08-07T05:00:26Z">
       <class name="candidateSideAutomation.candidateRegistration">
-        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="setup" is-config="true" duration-ms="5578" started-at="2014-05-26T12:03:47Z" finished-at="2014-05-26T12:03:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="setup" is-config="true" duration-ms="24607" started-at="2015-08-07T10:28:30Z" finished-at="2015-08-07T10:28:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="linkedinRegistration()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="linkedinRegistration" duration-ms="52750" started-at="2014-05-26T12:03:53Z" finished-at="2014-05-26T12:04:46Z">
-          <exception class="org.openqa.selenium.NoSuchFrameException">
-            <message>
-              <![CDATA[Unable to locate frame: GB_frame1
-Command duration or timeout: 30.38 seconds
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: 052f3132-f1e0-48f2-a9da-4686711ee887
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchFrameException: Unable to locate frame: GB_frame1
-Command duration or timeout: 30.38 seconds
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: 052f3132-f1e0-48f2-a9da-4686711ee887
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:862)
-	at candidateSideAutomation.candidateRegistration.linkedinRegistration(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate frame: GB_frame1
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.switchToFrame(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous1250199697637318453webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8974)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous1250199697637318453webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10884)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous1250199697637318453webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:396)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkedinRegistration -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="teardon" is-config="true" duration-ms="281" started-at="2014-05-26T12:04:46Z" finished-at="2014-05-26T12:04:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardon -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="setup" is-config="true" duration-ms="5469" started-at="2014-05-26T12:04:46Z" finished-at="2014-05-26T12:04:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="registraionCompleteStage()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="registraionCompleteStage" duration-ms="35360" started-at="2014-05-26T12:04:51Z" finished-at="2014-05-26T12:05:27Z">
+        <test-method status="PASS" signature="registraionCompleteStage()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="registraionCompleteStage" duration-ms="52939" started-at="2015-08-07T10:28:54Z" finished-at="2015-08-07T10:29:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registraionCompleteStage -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="teardon" is-config="true" duration-ms="296" started-at="2014-05-26T12:05:27Z" finished-at="2014-05-26T12:05:27Z">
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="teardon" is-config="true" duration-ms="16" started-at="2015-08-07T10:29:47Z" finished-at="2015-08-07T10:29:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardon -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="setup" is-config="true" duration-ms="5719" started-at="2014-05-26T12:05:27Z" finished-at="2014-05-26T12:05:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="setup" is-config="true" duration-ms="6159" started-at="2015-08-07T10:29:47Z" finished-at="2015-08-07T10:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="registraionFirstStage()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="registraionFirstStage" duration-ms="17563" started-at="2014-05-26T12:05:33Z" finished-at="2014-05-26T12:05:50Z">
+        <test-method status="PASS" signature="registraionFirstStage()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="registraionFirstStage" duration-ms="17238" started-at="2015-08-07T10:29:53Z" finished-at="2015-08-07T10:30:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registraionFirstStage -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@120a47e]" name="teardon" is-config="true" duration-ms="281" started-at="2014-05-26T12:05:50Z" finished-at="2014-05-26T12:05:50Z">
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="teardon" is-config="true" duration-ms="47" started-at="2015-08-07T10:30:11Z" finished-at="2015-08-07T10:30:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="setup" is-config="true" duration-ms="6512" started-at="2015-08-07T10:30:11Z" finished-at="2015-08-07T10:30:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="recommendedJobsVerification()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="recommendedJobsVerification" duration-ms="9141" started-at="2015-08-07T10:30:17Z" finished-at="2015-08-07T10:30:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recommendedJobsVerification -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.candidateRegistration@61542a75]" name="teardon" is-config="true" duration-ms="0" started-at="2015-08-07T10:30:26Z" finished-at="2015-08-07T10:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardon -->
       </class> <!-- candidateSideAutomation.candidateRegistration -->
     </test> <!-- Registration -->
-    <test name="linktest" duration-ms="73438" started-at="2014-05-26T06:35:51Z" finished-at="2014-05-26T06:37:04Z">
-      <class name="candidateSideAutomation.linkTraversal">
-        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="setup" is-config="true" duration-ms="5219" started-at="2014-05-26T12:05:51Z" finished-at="2014-05-26T12:05:56Z">
+    <test name="AddNewResume" duration-ms="55362" started-at="2015-08-07T05:00:26Z" finished-at="2015-08-07T05:01:22Z">
+      <class name="candidateSideAutomation.NewResume">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.NewResume@5e785d65]" name="setup" is-config="true" duration-ms="6536" started-at="2015-08-07T10:30:26Z" finished-at="2015-08-07T10:30:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="login" duration-ms="9594" started-at="2014-05-26T12:05:56Z" finished-at="2014-05-26T12:06:05Z">
+        <test-method status="PASS" signature="AddNewResume()[pri:0, instance:candidateSideAutomation.NewResume@5e785d65]" name="AddNewResume" duration-ms="48794" started-at="2015-08-07T10:30:33Z" finished-at="2015-08-07T10:31:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="FAIL" signature="pageVal()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="pageVal" duration-ms="25031" started-at="2014-05-26T12:06:05Z" finished-at="2014-05-26T12:06:30Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[@class='rec-jobs']/header/div/h1"}
-Command duration or timeout: 25.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@class='rec-jobs']/header/div/h1"}
-Command duration or timeout: 25.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at candidateSideAutomation.linkTraversal.pageVal(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@class='rec-jobs']/header/div/h1"}
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageVal -->
-        <test-method status="PASS" signature="privateSettings()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="privateSettings" duration-ms="3937" started-at="2014-05-26T12:06:30Z" finished-at="2014-05-26T12:06:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- privateSettings -->
-        <test-method status="PASS" signature="editProfile()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="editProfile" duration-ms="2313" started-at="2014-05-26T12:06:34Z" finished-at="2014-05-26T12:06:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editProfile -->
-        <test-method status="PASS" signature="signOut()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="signOut" duration-ms="6797" started-at="2014-05-26T12:06:37Z" finished-at="2014-05-26T12:06:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signOut -->
-        <test-method status="FAIL" signature="editDetails()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="editDetails" duration-ms="10125" started-at="2014-05-26T12:06:43Z" finished-at="2014-05-26T12:06:54Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at candidateSideAutomation.linkTraversal.editDetails(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editDetails -->
-        <test-method status="FAIL" signature="ediKeySkills()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="ediKeySkills" duration-ms="10062" started-at="2014-05-26T12:06:54Z" finished-at="2014-05-26T12:07:04Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Command duration or timeout: 10.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Command duration or timeout: 10.06 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Session ID: b4d14582-65e9-49e8-9e6c-79e305cf5d4f
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=29.0, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, browserConnectionEnabled=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:445)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:340)
-	at candidateSideAutomation.linkTraversal.ediKeySkills(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.TestNG.privateMain(TestNG.java:1364)
-	at org.testng.TestNG.main(TestNG.java:1333)
-Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {"method":"xpath","selector":"//div[@id='userProfilPicsId']/a"}
-Build info: version: '2.41.0', revision: '3192d8a', time: '2014-03-27 17:17:32'
-System info: host: 'times-09bb94003', ip: '10.150.224.125', os.name: 'Windows XP', os.arch: 'x86', os.version: '5.1', java.version: '1.6.0_45'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8905)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///E:/DOCUME~1/Charu/LOCALS~1/Temp/anonymous5955219541778582977webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:396)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ediKeySkills -->
-        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.linkTraversal@171bbc9]" name="teardon" is-config="true" duration-ms="360" started-at="2014-05-26T12:07:04Z" finished-at="2014-05-26T12:07:04Z">
+        </test-method> <!-- AddNewResume -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.NewResume@5e785d65]" name="teardon" is-config="true" duration-ms="32" started-at="2015-08-07T10:31:22Z" finished-at="2015-08-07T10:31:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardon -->
-      </class> <!-- candidateSideAutomation.linkTraversal -->
-    </test> <!-- linktest -->
+      </class> <!-- candidateSideAutomation.NewResume -->
+    </test> <!-- AddNewResume -->
+    <test name="UpdateJobAlertSettings" duration-ms="39890" started-at="2015-08-07T05:01:22Z" finished-at="2015-08-07T05:02:02Z">
+      <class name="candidateSideAutomation.jobalert">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="setup" is-config="true" duration-ms="34845" started-at="2015-08-07T10:31:22Z" finished-at="2015-08-07T10:31:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="countryCodeTest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="countryCodeTest" duration-ms="2030" started-at="2015-08-07T10:31:57Z" finished-at="2015-08-07T10:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countryCodeTest -->
+        <test-method status="PASS" signature="emailtest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="emailtest" duration-ms="48" started-at="2015-08-07T10:31:59Z" finished-at="2015-08-07T10:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailtest -->
+        <test-method status="PASS" signature="funcAreatest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="funcAreatest" duration-ms="146" started-at="2015-08-07T10:31:59Z" finished-at="2015-08-07T10:31:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- funcAreatest -->
+        <test-method status="PASS" signature="locationtest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="locationtest" duration-ms="965" started-at="2015-08-07T10:31:59Z" finished-at="2015-08-07T10:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- locationtest -->
+        <test-method status="PASS" signature="mobiletest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="mobiletest" duration-ms="41" started-at="2015-08-07T10:32:00Z" finished-at="2015-08-07T10:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobiletest -->
+        <test-method status="PASS" signature="monthTest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="monthTest" duration-ms="118" started-at="2015-08-07T10:32:00Z" finished-at="2015-08-07T10:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- monthTest -->
+        <test-method status="PASS" signature="prefferedLocationtest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="prefferedLocationtest" duration-ms="438" started-at="2015-08-07T10:32:00Z" finished-at="2015-08-07T10:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prefferedLocationtest -->
+        <test-method status="PASS" signature="roletest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="roletest" duration-ms="261" started-at="2015-08-07T10:32:00Z" finished-at="2015-08-07T10:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- roletest -->
+        <test-method status="PASS" signature="specializationTest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="specializationTest" duration-ms="780" started-at="2015-08-07T10:32:01Z" finished-at="2015-08-07T10:32:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- specializationTest -->
+        <test-method status="PASS" signature="yearTest()[pri:0, instance:candidateSideAutomation.jobalert@ed42d08]" name="yearTest" duration-ms="215" started-at="2015-08-07T10:32:01Z" finished-at="2015-08-07T10:32:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yearTest -->
+      </class> <!-- candidateSideAutomation.jobalert -->
+    </test> <!-- UpdateJobAlertSettings -->
+    <test name="LoginFlow" duration-ms="517580" started-at="2015-08-07T05:02:02Z" finished-at="2015-08-07T05:10:39Z">
+      <class name="candidateSideAutomation.Login">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="setup" is-config="true" duration-ms="5917" started-at="2015-08-07T10:32:02Z" finished-at="2015-08-07T10:32:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="signInlayer()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="signInlayer" duration-ms="31381" started-at="2015-08-07T10:32:08Z" finished-at="2015-08-07T10:32:39Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://www.timesjobs.com/candidate/myhome.html] but found [http://timesjobs.com/candidate/myhome.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://www.timesjobs.com/candidate/myhome.html] but found [http://timesjobs.com/candidate/myhome.html]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at candidateSideAutomation.Login.signInlayer(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInlayer -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="teardon" is-config="true" duration-ms="626" started-at="2015-08-07T10:32:39Z" finished-at="2015-08-07T10:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="setup" is-config="true" duration-ms="7297" started-at="2015-08-07T10:32:40Z" finished-at="2015-08-07T10:32:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginPage()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="loginPage" duration-ms="417206" started-at="2015-08-07T10:32:47Z" finished-at="2015-08-07T10:39:44Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://www.timesjobs.com/candidate/myhome.html?from=myTimes] but found [http://timesjobs.com/candidate/myhome.html?from=myTimes]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://www.timesjobs.com/candidate/myhome.html?from=myTimes] but found [http://timesjobs.com/candidate/myhome.html?from=myTimes]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at candidateSideAutomation.Login.loginPage(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="teardon" is-config="true" duration-ms="655" started-at="2015-08-07T10:39:44Z" finished-at="2015-08-07T10:39:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="setup" is-config="true" duration-ms="9691" started-at="2015-08-07T10:39:45Z" finished-at="2015-08-07T10:39:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="loginStepOneUser()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="loginStepOneUser" duration-ms="7624" started-at="2015-08-07T10:39:54Z" finished-at="2015-08-07T10:40:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://www.timesjobs.com/candidate/uploadyourresume.html] but found [http://timesjobs.com/candidate/uploadyourresume.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://www.timesjobs.com/candidate/uploadyourresume.html] but found [http://timesjobs.com/candidate/uploadyourresume.html]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at candidateSideAutomation.Login.loginStepOneUser(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStepOneUser -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="teardon" is-config="true" duration-ms="493" started-at="2015-08-07T10:40:02Z" finished-at="2015-08-07T10:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="setup" is-config="true" duration-ms="10434" started-at="2015-08-07T10:40:03Z" finished-at="2015-08-07T10:40:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginStepOneptFiveUser()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="loginStepOneptFiveUser" duration-ms="7930" started-at="2015-08-07T10:40:13Z" finished-at="2015-08-07T10:40:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStepOneptFiveUser -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="teardon" is-config="true" duration-ms="1056" started-at="2015-08-07T10:40:21Z" finished-at="2015-08-07T10:40:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="setup" is-config="true" duration-ms="7775" started-at="2015-08-07T10:40:22Z" finished-at="2015-08-07T10:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginStepSevenUser()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="loginStepSevenUser" duration-ms="8913" started-at="2015-08-07T10:40:30Z" finished-at="2015-08-07T10:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginStepSevenUser -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Login@6581ed9e]" name="teardon" is-config="true" duration-ms="578" started-at="2015-08-07T10:40:39Z" finished-at="2015-08-07T10:40:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+      </class> <!-- candidateSideAutomation.Login -->
+    </test> <!-- LoginFlow -->
+    <test name="EndorsementFlow" duration-ms="80976" started-at="2015-08-07T05:10:39Z" finished-at="2015-08-07T05:12:00Z">
+      <class name="candidateSideAutomation.Endorsement">
+        <test-method status="PASS" signature="setup()[pri:0, instance:candidateSideAutomation.Endorsement@5bbf3d87]" name="setup" is-config="true" duration-ms="16154" started-at="2015-08-07T10:40:39Z" finished-at="2015-08-07T10:40:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="endoresement()[pri:0, instance:candidateSideAutomation.Endorsement@5bbf3d87]" name="endoresement" duration-ms="64820" started-at="2015-08-07T10:40:55Z" finished-at="2015-08-07T10:42:00Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"html/body/div[1]/div[1]/div/section/div[2]"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'NODTBSL188AG', ip: '10.150.241.135', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.6.0_45'
+*** Element info: {Using=xpath, value=html/body/div[1]/div[1]/div/section/div[2]}
+Session ID: 230d9241-ea22-4b45-9a75-55705d350e8e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[1]/div[1]/div/section/div[2]"}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'NODTBSL188AG', ip: '10.150.241.135', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.6.0_45'
+*** Element info: {Using=xpath, value=html/body/div[1]/div[1]/div/section/div[2]}
+Session ID: 230d9241-ea22-4b45-9a75-55705d350e8e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, rotatable=false, locationContextEnabled=true, version=37.0.1, cssSelectorsEnabled=true, databaseEnabled=true, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, applicationCacheEnabled=true, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:455)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at candidateSideAutomation.Endorsement.endoresement(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1220)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.TestNG.privateMain(TestNG.java:1364)
+	at org.testng.TestNG.main(TestNG.java:1333)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"html/body/div[1]/div[1]/div/section/div[2]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:17:10'
+System info: host: 'NODTBSL188AG', ip: '10.150.241.135', os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '1.6.0_45'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BIDYUT~1.HAZ/AppData/Local/Temp/anonymous7573965621332431986webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/BIDYUT~1.HAZ/AppData/Local/Temp/anonymous7573965621332431986webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:603)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endoresement -->
+        <test-method status="PASS" signature="teardon()[pri:0, instance:candidateSideAutomation.Endorsement@5bbf3d87]" name="teardon" is-config="true" duration-ms="0" started-at="2015-08-07T10:42:00Z" finished-at="2015-08-07T10:42:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardon -->
+      </class> <!-- candidateSideAutomation.Endorsement -->
+    </test> <!-- EndorsementFlow -->
   </suite> <!-- CANDIDATE SIDE TEST CASES -->
 </testng-results>

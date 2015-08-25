@@ -5,11 +5,30 @@
     <classes>
       <class name="candidateSideAutomation.candidateRegistration"/>
     </classes>
+    </test>
+     <test name="AddNewResume">  
+      <classes>
+      <class name="candidateSideAutomation.NewResume"/>
+    </classes>
+  </test>
+   <test name="UpdateJobAlertSettings">  
+      <classes>
+      <class name="candidateSideAutomation.jobalert"/>
+    </classes>
+  </test>
+   <test name="LoginFlow">  
+      <classes>
+      <class name="candidateSideAutomation.Login"/>
+    </classes>
+  </test>
+     <test name="EndorsementFlow">  
+      <classes>
+      <class name="candidateSideAutomation.Endorsement"/>
+    </classes>
   </test>
   
-   <test name="linktest">  
-      <classes>
-      <class name="candidateSideAutomation.linkTraversal"/>
-    </classes>
-  </test> 
+  
+    
+    
+  
 </suite> <!-- Suite1 -->

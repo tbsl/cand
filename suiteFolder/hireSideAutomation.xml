@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="HIRE SIDE TEST CASES" >
-  <test name="Testc">
+  <test name="Collaborate testing">
     <classes>
-      <class name="registrationSuite2.Thirdtestcase"/>
+      <class name="hireSideAutomation.collaborate"/>
     </classes>
   </test>
    
-   <test name="Testd">
+   <test name="Registration">
      <classes>
-      <class name="registrationSuite2.Fourthtestcase"/>
+      <class name="hireSideAutomation.hireRegistration"/>
      </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite2 -->
+  </test>
+  <test name="Search">
+     <classes>
+      <class name="hireSideAutomation.hireSearchAutomation"/>
+     </classes>
+  </test>
+     <test name="UsageReport">
+     <classes>
+      <class name="hireSideAutomation.HireUsageReport"/>
+     </classes>
+  </test>
+   <test name="ManageAccount">
+     <classes>
+      <class name="hireSideAutomation.ManageAccountUser"/>
+     </classes>
+  </test>
+    <test name="SearchApplication">
+     <classes>
+      <class name="hireSideAutomation.searchApplication"/>
+     </classes>
+  </test>
+    <test name="JobPosting">
+     <classes>
+      <class name="hireSideAutomation.EmployerPostingPreviewDraftEdit"/>
+     </classes>
+  </test>
+  
+  </suite> <!-- Suite2 -->
